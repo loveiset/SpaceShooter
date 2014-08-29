@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour {
 
     public float speed = 10.0f;
 
+    public GameObject bolt;
+    public Transform spawnPosition;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -23,6 +26,10 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetButtonUp("Fire1"))
+        {
+            Instantiate(bolt, spawnPosition.position, spawnPosition.rotation);
+        }
 	
 	}
 

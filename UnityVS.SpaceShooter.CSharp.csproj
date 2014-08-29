@@ -48,6 +48,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BoltMove.cs" />
     <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <None Include="Assets\SpaceShooter\版权声明.txt" />
